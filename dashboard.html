@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - System Handover Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <span class="logo">Shell</span>
+        </div>
+        <div class="navbar-links">
+          <a href="hari.html">Home</a>
+          <a href="dashboard.html">DashBoard</a>
+          <a href="projects">Migrated Products</a>
+          <a href="contact">Contact</a>
+        </div>
+        <div class="navbar-user">
+          <span>Elangovan Hari</span>
+          <select>
+            <option>Block Lead / Engineer</option>
+          </select>
+        </div>
+      </nav>
+    
+  
+  <main>
+    <h2>SMCN/SMCA</h2>
+    <div class="status-indicator">
+      <div class="status not-complete">Not Complete</div>
+      <div class="status complete">Completed</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>System</th>
+          <th>Production Unit</th>
+          <th>Maintenance Team</th>
+          <th>Block Lead / Engineer</th>
+          <th>PSR Lead</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ammonia</td>
+          <td>PU2</td>
+          <td><div class="status complete"></div></td>
+          <td>
+            <select>
+              <option value="yes">YES</option>
+              <option value="no">NO</option>
+            </select>
+          </td>
+          <td><div class="status complete"></div></td>
+        </tr>
+        <tr>
+          <td>Seal Oil</td>
+          <td>PU2</td>
+          <td><div class="status complete"></div></td>
+          <td>
+            <select>
+              <option value="yes">YES</option>
+              <option value="no">NO</option>
+            </select>
+          </td>
+          <td><div class="status complete"></div></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="export-button">Export to Excel</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
